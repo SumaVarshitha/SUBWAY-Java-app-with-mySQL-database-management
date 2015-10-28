@@ -1,0 +1,58 @@
+drop database subway;
+create database subway;
+use subway;
+
+create table members
+(ID integer(5) primary key,
+status varchar(7) not null,
+name varchar(30) not null,
+gender char(1) not null,
+password varchar(30) not null,
+date_last_logged_in date not null,
+date_created date not null);
+
+create table contact_info
+(ID integer(5) primary key,
+name varchar(30) not null,
+status varchar(7) not null,
+mobile_no bigint(10) not null,
+email varchar(40) not null,
+address varchar(50) not null);
+
+create table orders
+(sno integer(5) unique not null,
+ID integer(5) not null,
+logged_in varchar(7),
+name varchar(30) not null,
+item_ordered varchar(50) not null,
+amount decimal(8,2) not null,
+quantity integer(5) null,
+date_ordered date,
+status varchar(6) not null);
+
+create table total_collection
+(total_orders integer(8),
+total_money integer(8));
+
+create table total_collection_perday
+(order_placed varchar(15),
+date date,
+amount integer(8));
+
+insert into members values
+(101,'online','KARTIK','M','physics','2013-11-24','1996-4-1');
+insert into contact_info values
+(101,'KARTIK','online',9712198644,'kkstrack@gmail.com','c3/6 trv');
+insert into orders values
+(01,101,'online','KARTIK','default entry',0,0,'2013-11-24','BOSS');
+
+insert into total_collection values
+(0,0);
+
+select * from members;
+select * from contact_info;
+select * from orders;
+select * from total_collection;
+
+
+
