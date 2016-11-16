@@ -1,17 +1,19 @@
 # JAVA app for Online food ordering and billing based on SUBWAY 
 
-aims at making unique hotel ID's where people can login to their account ,order their food, see their history and so on..
+aims at making unique customer ID's where people can login into their account ,order food, see  history and so on..
 
-JAVA on foreground 
+JAVA on foreground using Netbeans IDE
+
 MySQL database management in background
 
-some important features- 
+some important features-
 
-individual account making option.
-order history account basis.
-special account for owner with all admin privileges.
-real time stats.
+Individual account for each user. 
 
-here is the video..
+Personalized order tracking system. 
+
+special account for owner with all admin privileges & stats in real time.
+
+have a look at the video..
 
 https://www.youtube.com/watch?v=esu_h4gowKM
